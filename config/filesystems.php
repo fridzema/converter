@@ -64,6 +64,10 @@ return [
             'url' => env('AWS_URL'),
         ],
 
+        'import' => [
+            'driver' => 'local',
+            'root' => storage_path('app/import'),
+        ],
     ],
 
 ];

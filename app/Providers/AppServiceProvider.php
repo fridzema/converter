@@ -13,7 +13,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+      $this->app->singleton('ImportDisk', function ($app) {
+          return config('converter.import_disk');
+      });
     }
 
     /**
